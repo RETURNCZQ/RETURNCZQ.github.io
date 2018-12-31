@@ -104,20 +104,24 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="RETURNCZQ">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="0x00 瞎BB考完研出于好奇点开了Andrew Ng 的课，到今天也算看完了三节课，这里就简略记一下学到的东西。——18年12月30日  0x01 监督学习通过一定量的数据集(训练集)，来获取一个较好的估计函数$h: x \rightarrow y$，其中 $x$ 为输入，$y$ 为输出，当 $y$ 是连续的时候称为回归(regression)问题，仅取少数几个值时称为分类(classifica">
+<meta property="og:type" content="article">
+<meta property="og:title" content="吴恩达机器学习学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/12/31/吴恩达机器学习学习笔记/index.html">
 <meta property="og:site_name" content="RETURNCZQ">
+<meta property="og:description" content="0x00 瞎BB考完研出于好奇点开了Andrew Ng 的课，到今天也算看完了三节课，这里就简略记一下学到的东西。——18年12月30日  0x01 监督学习通过一定量的数据集(训练集)，来获取一个较好的估计函数$h: x \rightarrow y$，其中 $x$ 为输入，$y$ 为输出，当 $y$ 是连续的时候称为回归(regression)问题，仅取少数几个值时称为分类(classifica">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-31T06:47:08.818Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RETURNCZQ">
+<meta name="twitter:title" content="吴恩达机器学习学习笔记">
+<meta name="twitter:description" content="0x00 瞎BB考完研出于好奇点开了Andrew Ng 的课，到今天也算看完了三节课，这里就简略记一下学到的东西。——18年12月30日  0x01 监督学习通过一定量的数据集(训练集)，来获取一个较好的估计函数$h: x \rightarrow y$，其中 $x$ 为输入，$y$ 为输出，当 $y$ 是连续的时候称为回归(regression)问题，仅取少数几个值时称为分类(classifica">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/31/吴恩达机器学习学习笔记/">
 
 
 
@@ -127,7 +131,7 @@
   };
 </script>
 
-  <title>RETURNCZQ</title>
+  <title>吴恩达机器学习学习笔记 | RETURNCZQ</title>
   
 
 
@@ -175,8 +179,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -214,7 +217,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -276,9 +279,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -310,10 +313,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/31/吴恩达机器学习学习笔记/" class="post-title-link" itemprop="url">吴恩达机器学习学习笔记</a>
+          <h1 class="post-title" itemprop="name headline">吴恩达机器学习学习笔记
+
               
             
           </h1>
@@ -376,9 +377,7 @@
       
 
       
-        
-          
-            <h1 id="0x00-瞎BB"><a href="#0x00-瞎BB" class="headerlink" title="0x00 瞎BB"></a>0x00 瞎BB</h1><p>考完研出于好奇点开了Andrew Ng 的课，到今天也算看完了三节课，这里就简略记一下学到的东西。——18年12月30日</p>
+        <h1 id="0x00-瞎BB"><a href="#0x00-瞎BB" class="headerlink" title="0x00 瞎BB"></a>0x00 瞎BB</h1><p>考完研出于好奇点开了Andrew Ng 的课，到今天也算看完了三节课，这里就简略记一下学到的东西。——18年12月30日</p>
 <hr>
 <h1 id="0x01-监督学习"><a href="#0x01-监督学习" class="headerlink" title="0x01 监督学习"></a>0x01 监督学习</h1><p>通过一定量的数据集(训练集)，来获取一个较好的估计函数$h: x \rightarrow y$，其中 $x$ 为输入，$y$ 为输出，当 $y$ 是连续的时候称为回归(regression)问题，仅取少数几个值时称为分类(classification)问题</p>
 <h2 id="Part-1-线性回归-Linear-Regression"><a href="#Part-1-线性回归-Linear-Regression" class="headerlink" title="Part 1 线性回归(Linear Regression)"></a>Part 1 线性回归(Linear Regression)</h2><p>我们估计 $h$ 是一个关于 $x$ 的线性函数，输入 $x$ 为一个 $n$ 维列向量(有 $n$ 个变量)，那么我们可以得到 $h$ 关于 $x$ 的函数为：</p>
@@ -397,8 +396,6 @@
 <h3 id="4-欠拟合和过拟合"><a href="#4-欠拟合和过拟合" class="headerlink" title="4.欠拟合和过拟合"></a>4.欠拟合和过拟合</h3><p>当数据是一个二次函数，若我们估计了一个线性函数，这称作<strong>欠拟合</strong>，若我们估计了一个n次函数，则称为<strong>过拟合</strong></p>
 <h3 id="5-局部加权线性回归"><a href="#5-局部加权线性回归" class="headerlink" title="5.局部加权线性回归"></a>5.局部加权线性回归</h3><p>当我们需要估计一个特定点 $x$ 的价值，那么距离该点越近的数据，越能反应该店的价值，越远反而影响越小。因此在该算法中我们给每个数据加了个权，即$\omega^{(i)}$，我们需要获取 $\theta$ 使 $\sum_{i=1}^{m}\omega^{(i)}(y^{(i)}-\theta^Tx^{(i)})^2$最小,其中$\omega^{(i)} = exp(-\frac{(x^{(i)} - x)^2}{2\tau^2})$，很容易看出$x^{(i)}$ 离 $x$ 越近，$\omega^{(i)}$越大</p>
 
-          
-        
       
     </div>
 
@@ -421,154 +418,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/28/我的个人博客/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zequn Chen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="RETURNCZQ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/28/我的个人博客/" class="post-title-link" itemprop="url">我的个人博客</a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2018/12/28/我的个人博客/" rel="next" title="我的个人博客">
+                <i class="fa fa-chevron-left"></i> 我的个人博客
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-12-28 15:51:44 / Modified: 17:04:20" itemprop="dateCreated datePublished" datetime="2018-12-28T15:51:44+08:00">2018-12-28</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>$\sum_{i=1}^j$</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -578,14 +449,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -606,8 +478,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -651,6 +532,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-瞎BB"><span class="nav-number">1.</span> <span class="nav-text">0x00 瞎BB</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-监督学习"><span class="nav-number">2.</span> <span class="nav-text">0x01 监督学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-1-线性回归-Linear-Regression"><span class="nav-number">2.1.</span> <span class="nav-text">Part 1 线性回归(Linear Regression)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-最小均方算法-LMS-算法"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.最小均方算法(LMS)算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-正规方程-再看最小二乘"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.正规方程+再看最小二乘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-为何选择上面的-J-theta"><span class="nav-number">2.1.3.</span> <span class="nav-text">3.为何选择上面的$J(\theta)$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-欠拟合和过拟合"><span class="nav-number">2.1.4.</span> <span class="nav-text">4.欠拟合和过拟合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-局部加权线性回归"><span class="nav-number">2.1.5.</span> <span class="nav-text">5.局部加权线性回归</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -779,6 +677,10 @@
   
 
   
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
 
   
 
@@ -821,14 +723,6 @@
   
 
   
-  
-    
-      
-        
-      
-    
-      
-    
   
 
   
